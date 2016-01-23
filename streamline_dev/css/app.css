@@ -1,0 +1,163 @@
+
+body {
+	padding: 45px;
+	background-color: #F7FBFF;
+}
+.flex-container {
+	display: flex;
+}
+
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	padding: 12px 20px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 12px;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.btn.square {
+	padding: 12px;
+}
+
+.btn.btn-gray.circle {
+	padding: 12px;
+	border-radius: 60px;
+	background-color: transparent;
+	border: solid 1px #707070;
+	color: #707070;
+}
+
+.btn.btn-blue.circle {
+	padding: 12px;
+	border-radius: 60px;
+	background-color: transparent;
+	border: solid 1px #069DE2;
+	color: #069DE2;
+}
+
+.btn.btn-dark.circle {
+	padding: 12px;
+	border-radius: 60px;
+	background-color: transparent;
+	border: solid 1px #0D2C54;
+	color: #0D2C54;
+}
+
+.btn.btn-green.circle {
+	padding: 12px;
+	border-radius: 60px;
+	background-color: transparent;
+	border: solid 1px #6EC762;
+	color: #6EC762;
+}
+
+.btn.btn-gray:hover {
+	opacity: .8;
+}
+
+.btn.btn-gray {
+	background-color: #EAEAEA;
+	color: #707070;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+}
+
+.btn.btn-blue {
+	background-color: #069DE2;
+	color: white;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+}
+
+.btn.btn-blue:hover {
+	opacity: .8;
+}
+
+.btn.btn-dark {
+	background-color: #0D2C54;
+	color: white;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+}
+
+.btn.btn-dark:hover {
+	opacity: .8;
+}
+
+.btn.btn-green {
+	background-color: #6EC762;
+	color: white;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+}
+
+.btn.btn-green:hover {
+	opacity: .8;
+}
+
+
+.icon {
+	font-family: 'streamline';
+	font-size: 11px;
+}
+
+.search-box {
+	border: solid 1px #e9e9e9;
+	border-radius: 20px;
+	padding: 8px 12px;
+	outline: none;
+	margin: 8px;
+	width: 80%;
+}
+
+.pill {
+	display: inline-block;
+	padding: 5px 14px;
+	border-radius: 15px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.pill.pill-gray {
+	background-color: #EAEAEA;
+	color: #707070;
+}
+
+.pill.pill-blue {
+	background-color: #069DE2;
+	color: #fff;
+}
+
+.pill.pill-dark {
+	background-color: #0D2C54;
+	color: #fff;
+}
+
+.pill.pill-green {
+	background-color: #6EC762;
+	color: #fff;
+}
+
+.pill.pill-red {
+	background-color: #FF4E4D;
+	color: #fff;
+}
+
+.pill.pill-orange {
+	background-color: #FF6D27;
+	color: #fff;
+}

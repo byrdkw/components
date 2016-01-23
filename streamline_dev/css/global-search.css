@@ -1,0 +1,114 @@
+.search {
+  float: left;
+  height: 50px;
+  position: relative;
+  width: 34%;
+}
+.search.one input {
+  border-radius: 100px;
+  right: 0;
+  transition: all .3s ease-in-out;
+  width: 50%;
+}
+.search.one input:focus {
+  width: 100%;
+}
+.search.one input:focus ~ button.btn-search, .search.two input:focus ~ button.btn-search {
+  background: transparent;
+  color: #000;
+}
+.search.one input:focus ~ button.btn-reset, .search.two input:focus ~ button.btn-reset {
+  right: -22px;
+}
+.search.one button {
+  transition: all .3s ease-in-out;
+}
+.search.one button.btn-search {
+  background: transparent;
+  border-radius: 100px;
+  height: 26px;
+  right: 8px;
+  top: 6px;
+  transition: all .3s ease-in-out;
+  width: 26px;
+}
+.search.one button.btn-reset {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  z-index: -1;
+}
+
+.search > input {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  height: 30px;
+  padding: 4px 16px;
+  position: absolute;
+  width: 50%;
+}
+.search > input:focus {
+  outline: none;
+}
+
+.search > button {
+  text-align: center;
+}
+.search > button:focus {
+  outline: none;
+}
+button.btn-search, button.btn-reset {
+  background: transparent;
+  border: none;
+  height: 30px;
+  font-size: 12px;
+  padding: 4px;
+  position: absolute;
+  width: 30px;
+}
+
+@keyframes bounceRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes jumpTowardSearch {
+  0% {
+    background: #ccc;
+    opacity: 1;
+    transform: rotateZ(0deg) scale(1);
+  }
+  20% {
+    background: #ccc;
+    opacity: 0;
+    transform: rotateZ(-60deg) scale(50);
+  }
+  55% {
+    background: hotpink;
+    opacity: 0;
+    transform: rotateZ(-30deg) scale(100);
+  }
+  90% {
+    background: hotpink;
+    opacity: 0;
+    transform: rotateZ(-30deg) scale(50);
+  }
+  100% {
+    background: hotpink;
+    opacity: 1;
+    transform: rotateZ(0deg) scale(1);
+  }
+}
