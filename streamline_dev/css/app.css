@@ -20,11 +20,11 @@ body {
 }
 
 .btn.square {
-	padding: 12px;
+	padding: 10px;
 }
 
 .btn.btn-gray.circle {
-	padding: 12px;
+	padding: 10px;
 	border-radius: 60px;
 	background-color: transparent;
 	border: solid 1px #707070;
