@@ -44,7 +44,7 @@ a {
 .dropdown-text,
 .dropdown-content a {
   color: #333;
-  text-shadow: 0 1px #fff;
+  transition: background-color .1s ease, color .1s ease;
 }
 
 .dropdown-toggle {
@@ -86,6 +86,7 @@ a {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   min-width: 200px;
   padding-left: 0;
+  z-index: 5;
 }
 
 .dropdown-content a {
@@ -102,7 +103,8 @@ a {
 }
 
 .dropdown-content a:hover {
-  background: #F6F6F6;
+  background: #00A6ED;
+  color: #fff;
 }
 
 .dropdown-toggle:hover ~ .dropdown-text,
