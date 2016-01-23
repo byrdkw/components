@@ -1,0 +1,22 @@
+.shadow-wrapper {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.shadow-box {
+	background-color: #fff;
+	margin-right: 15px;
+	text-align: center;
+	padding: 80px;
+	font-size: 22px;
+	color: #BFBFBF;
+}
+
+.shadow-box-hover {
+	background-color: #fff;
+	margin-top: 15px;
+	text-align: center;
+	padding: 20px 80px;
+	font-size: 22px;
+	color: #BFBFBF;
+}
