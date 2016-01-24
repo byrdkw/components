@@ -1,0 +1,106 @@
+.popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    min-width: 275px;
+    max-width: 300px;
+    padding: 1px;
+    font-family: "lato",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    line-break: auto;
+}
+
+.popover-navigation>.btn-sm{
+    float: right;
+}
+
+.popover-navigation>.btn-group {
+    display: flex;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.popover.right {
+    margin-left: 10px;
+}
+
+.popover>.arrow {
+    border-width: 11px;
+}
+
+.popover>.arrow, 
+.popover>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.popover.right>.arrow {
+    top: 50%;
+    left: -11px;
+    margin-top: -11px;
+    border-right-color: #CACACA;
+    border-right-color: #CACACA;
+    border-left-width: 0;
+}
+
+.popover.right>.arrow:after {
+    bottom: -10px;
+    left: 1px;
+    content: " ";
+    border-right-color: #fff;
+    border-left-width: 0;
+}
+
+.popover>.arrow:after {
+    content: "";
+    border-width: 10px;
+}
+
+.popover-title {
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 12px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #5D5D5D;
+}
+
+.popover-content {
+    padding: 9px 14px;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.popover-navigation {
+    padding: 8px;
+}

@@ -11,7 +11,11 @@
 <link rel="stylesheet" type="text/css" href="streamline_dev/css/streamline-codes.css">
 <link rel="stylesheet" type="text/css" href="streamline_dev/css/streamline-embedded.css">
 <link rel="stylesheet" type="text/css" href="streamline_dev/css/streamline.css">
+<link rel="stylesheet" type="text/css" href="streamline_dev/css/tour.css">
 <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
 
 <script src="streamline_dev/js/global-search.js"></script>
 </head>
@@ -19,7 +23,7 @@
 <body>
 <div class="break-md"></div>
 <div>
-	<div class="btn btn-gray">Action</div>
+	<div class="btn btn-gray" id="one">Action</div>
 	<div class="btn btn-blue">Action</div>
 	<div class="btn btn-dark">Action</div>
 	<div class="btn btn-green">Action</div>
@@ -55,7 +59,7 @@
     <li><a href="#">Option 3</a></li>
   </ul>
 </div>
-<div class="dropdown mr-20">
+<div class="dropdown mr-20" id="two">
   <input class="dropdown-toggle" type="text">
   <div class="dropdown-text">Select</div>
   <ul class="dropdown-content">
@@ -68,7 +72,7 @@
   <input class="dropdown-toggle" type="text">
   <div class="dropdown-text">Select</div>
 	  <ul class="dropdown-content">
-	  	<input class="search-box" id="search-box dropdown-search" placeholder="Search">
+	  	<input class="search-box two" id="search-box dropdown-search" placeholder="Search">
 		  	<div class="dropdown-results">
 			    <li><a href="#">Option 1</a></li>
 			    <li><a href="#">Option 2</a></li>
@@ -83,7 +87,7 @@
 	<div class="pill pill-green">Label</div>
 	<div class="pill pill-red">Label</div>
 <div class="break-md"></div>
-<div class="search one">
+<div class="search one" id="three">
   <input type="text" name="search" placeholder="Search">
   <button type="submit" class="btn btn-search icon icon-search"></button>
 </div>
@@ -94,6 +98,33 @@
 	<div class="shadow-box z-3">Z-3</div>
 </div>
 <div class="shadow-box-hover shadow-hover dragable">This is the <strong style="color: #707070;">shadow-hover</strong> Hover Me!</div>
-</body>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.10.1/js/bootstrap-tour.min.js"></script>
+<script>
+var tour = new Tour({
+  steps: [
+  {
+    element: "#one",
+    title: "This is a button",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    element: "#two",
+    title: "This is a search box",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  }
+]
+// Other stuff can go here from bootstrap tour documentation
+});
+
+// Initialize the tour
+tour.init();
+
+// Start the tour
+tour.start();
+</script>
+</body>
 </html>

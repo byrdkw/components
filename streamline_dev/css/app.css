@@ -32,6 +32,17 @@ body {
 	color: #707070;
 }
 
+.btn.btn-default {
+	background-color: #fff;
+	color: #5D5D5D;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	border: solid 1px #eaeaea;
+	outline: none;
+}
+
 .btn.btn-blue.circle {
 	padding: 12px;
 	border-radius: 60px;
@@ -161,3 +172,5 @@ body {
 	background-color: #FF6D27;
 	color: #fff;
 }
+
+
