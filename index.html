@@ -93,7 +93,7 @@
 </div>
 <div class="break-md"></div>
 <div class="shadow-wrapper flex-container">
-	<div class="shadow-box z-1">Z-1</div>
+	<div class="shadow-box z-1" id="three">Z-1</div>
 	<div class="shadow-box z-2">Z-2</div>
 	<div class="shadow-box z-3">Z-3</div>
 </div>
@@ -115,16 +115,20 @@ var tour = new Tour({
     element: "#two",
     title: "This is a search box",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    element: "#three",
+    title: "This is a search box",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   }
 ]
-// Other stuff can go here from bootstrap tour documentation
 });
-
+// True defaults it to running on every refresh - turn off for prod
 // Initialize the tour
-tour.init();
+tour.init(true);
 
 // Start the tour
-tour.start();
+tour.start(true);
 </script>
 </body>
 </html>
